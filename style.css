@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.player {
+    width: 100%;
+    max-width: 380px;
+    padding: 30px 22px;
+    text-align: center;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.cover {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 85px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7f5af0, #2cb67d);
+    box-shadow: 0 8px 25px #0005;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+#artist {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#progress {
+    flex: 1;
+    min-width: 0;
+    accent-color: #7f5af0;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+button {
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.controls button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 21px;
+    background: #394867;
+}
+
+#play {
+    width: 65px;
+    height: 65px;
+    font-size: 27px;
+    background: #7f5af0;
+}
+
+.volume-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+#volume {
+    width: 100px;
+    accent-color: #7f5af0;
+    cursor: pointer;
+}
+
+#status {
+    color: #cbd5e1;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+@media (max-width: 400px) {
+    .player {
+        padding: 25px 15px;
+    }
+
+    .cover {
+        width: 150px;
+        height: 150px;
+    }
+
+    .controls {
+        gap: 18px;
+    }
+}
